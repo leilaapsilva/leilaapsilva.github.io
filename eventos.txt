@@ -4,3 +4,12 @@ TDC SP 2017
 Hackathons
 Projeto Archimedes - ONG Formiga Verde 05/06/17
 
+
+
+Informações para adicionar:
+
+Como clonar branch específica do Github:
+
+git clone -b <branch> <remote_repo>
+
+git clone -b my-branch git@github.com:user/myproject.git
