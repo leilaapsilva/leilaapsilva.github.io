@@ -13,3 +13,10 @@ Como clonar branch específica do Github:
 git clone -b <branch> <remote_repo>
 
 git clone -b my-branch git@github.com:user/myproject.git
+
+
+### Como importar o módulo requests do Python no Windows
+
+Erro: No module named requests
+
+Abra o CMD, vá até ´C:\Python35\Scripts\´ (ou Python27, dependendo da versão) e rode: ´pip install requests´
