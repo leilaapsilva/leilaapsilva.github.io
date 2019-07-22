@@ -20,3 +20,6 @@ git clone -b my-branch git@github.com:user/myproject.git
 Erro: No module named requests
 
 Abra o CMD, vá até ´C:\Python35\Scripts\´ (ou Python27, dependendo da versão) e rode: ´pip install requests´
+
+Peer authentication failed Postgresql
+https://askubuntu.com/questions/820792/peer-authentication-failed-for-user-with-all-privileges-in-postgres-9-5
