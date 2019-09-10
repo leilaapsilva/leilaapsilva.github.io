@@ -23,3 +23,8 @@ Abra o CMD, vá até ´C:\Python35\Scripts\´ (ou Python27, dependendo da versã
 
 Peer authentication failed Postgresql
 https://askubuntu.com/questions/820792/peer-authentication-failed-for-user-with-all-privileges-in-postgres-9-5
+
+
+### Utilizar DataGrip (PyCharm)
+
+### Trabalhando com Django no Pycharm
