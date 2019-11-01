@@ -3,8 +3,9 @@ Roadsec 2016/2017
 TDC SP 2017
 Hackathons
 Projeto Archimedes - ONG Formiga Verde 05/06/17
+Technovation Techschool 2019
 
-
+Trabalho com Python/Django
 
 Informações para adicionar:
 
@@ -28,3 +29,5 @@ https://askubuntu.com/questions/820792/peer-authentication-failed-for-user-with-
 ### Utilizar DataGrip (PyCharm)
 
 ### Trabalhando com Django no Pycharm
+
+Adicionar página com tutoriais/artigos
