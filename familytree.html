@@ -1,0 +1,309 @@
+<!-- Styles -->
+<style>
+  #chartdiv { 
+    width: 200vh;
+    height:100%;
+    max-width:100%; 
+  }
+  </style>
+  
+  <!-- Resources -->
+  <script src="https://www.amcharts.com/lib/4/core.js"></script>
+  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://www.amcharts.com/lib/4/plugins/forceDirected.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/material.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+  
+  <!-- Chart code -->
+  <script>
+  am4core.ready(function() {
+  
+  // Themes begin
+  am4core.useTheme(am4themes_material);
+  am4core.useTheme(am4themes_animated);
+  // Themes end
+  
+  var chart = am4core.create("chartdiv", am4plugins_forceDirected.ForceDirectedTree);
+  var networkSeries = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries())
+  
+  chart.data = [
+    {
+      name: "Maria José e \nJoaquim",
+      children: [
+            // -------------- LOURDES
+        {
+          name: "Maria de\n Lourdes",
+          children: [
+            { name: "Sérgio", value: 1 },       // 1 - Sérgio
+            { name: "Adilson", value: 1 },      // 2 - Adilson
+            { name: "Wilson", children: [       // 3 - Wilson
+                { name: "Taís", children: [
+                    {name: "Davi\nLuiz", value: 1}
+                ]},
+                { name: "Taianara", value: 1},
+                { name: "Jonathan", value: 1},
+            ]},
+            { name: "Sandra", children: [       // 4 - Sandra
+                { name: "Juliana", value: 1 },
+                { name: "Bruno", children: [
+                    { name: "Daniel", value: 1}
+                ]},
+                { name: "Diego", value: 1 },
+                { name: "Matheus", value: 1},
+              ]},
+              { name: "Célia", children: [      // 5 - Célia
+                { name: "Camila", value: 1 },
+                { name: "Ivan", children: [
+                    { name: "Luís\nFernando", value: 1},
+                    { name: "Davi\nSamuel", value: 1} // ?????
+                ]},
+                { name: "Carolina", value: 1 },
+                { name: "Matheus", value: 1},
+                { name: "Thiago", value: 1},
+                { name: "Gabriel", value: 1},
+              ]},
+              { name: "Fabiana", children: [    // 6 - Fabiana
+                { name: "Vinícius", 
+                 children: [
+                     { name: "Maria\nSophia", value: 1},
+                 ] },
+                { name: "Miguel", value: 1 },
+                { name: "João\nVitor", value: 1 },
+                { name: "Kaylaine", value: 1},
+                { name: "Kauani", value: 1},
+              ]},
+              { name: "Núbia", children: [         // 7 - Núbia
+                { name: "Gustavo", value: 1 },
+                { name: "Henrique", value: 1 },
+                { name: "Eduardo", value: 1},
+                { name: "Ketleen", value: 1},
+                { name: "Kelvin", value: 1},
+              ]},
+              { name: "Paula", children: [          // 8 - Paula
+                { name: "Lucas", value: 1 },
+                { name: "Eduarda", children: [
+                    { name: "Gabriel", value: 1}
+                ]},
+                { name: "Antonio", value: 1 },
+                { name: "Luan", value: 1},
+                { name: "Anderson", value: 1},
+                { name: "Luiz\nFabiano", value: 1},
+                { name: "Pedro", value: 1},
+              ]},
+              { name: "Adriana", children: [        // 9 - Adriana
+                { name: "Brenda", value: 1 },
+                { name: "Patrick", value: 1},
+        
+              ]},
+              { name: "Nádia", children: [          // 10 - Nádia
+                { name: "Bianca", value: 1 },
+                { name: "Amanda", value: 1},
+                { name: "Wesley", value: 1},
+                { name: "Juliana", value: 1},
+                { name: "Esther", value: 1},
+              ]},
+              { name: "Vanessa", children: [        // 11 - Vanessa
+                { name: "Yasmin", value: 1 },
+                { name: "Jeniffer", value: 1},
+                { name: "Vitória", value: 1},
+              ]},
+               { name: "Cleiton", children: [       // 12 - Cleiton
+                { name: "Diogo", value: 1 },
+                { name: "Rebeca", value: 1},
+              ]},
+              { name: "Anderson +", value: 1},      // 13 - Anderson
+          ]},
+            {
+            
+            // -------------- LUIZ       
+          name: "Luiz",
+          children: [
+            { name: "Daniel", children: [
+                { name: "Luísa", value: 1 },
+                { name: "Matheus", value: 1 },
+                { name: "Camila", value: 1 }
+              ]},
+           { name: "Débora", children: [
+                { name: "Ellen", value: 1 },
+                { name: "Gabriel", value: 1 },
+              ]},
+              { name: "Denilson", children: [
+                  { name: "Ryan", value: 1},
+              ]}
+          ]},
+        {        
+        	// -------------- LÚCIO
+          name: "Lúcio",
+          children: [
+            { 
+                name: "David", 
+                children: [
+                    { name: "Alana", value: 1},
+                    { name: "Manoela", value: 1},
+                    { name: "Samuel", value: 1},
+                ]},
+            { name: "Dalila",
+                children: [
+                    { name: "Rebeca", value: 1},
+                ]},
+              
+            { name: "Dayane", value: 1 },
+          ]
+        },
+        {
+        	// -------------- ELI
+          name: "Eli",
+          children: [
+            {
+              name: "Paulo",
+              children: [
+                { name: "Jéssica\nVitória", value: 1 }
+              	]},
+	            { name: "Luciano", children: [
+	                { name: "Ryan", value: 1 },
+	            ]},
+        ]},
+          
+        {
+        	// -------------- IRANI
+          name: "Irani",
+          children: [
+            { name: "Jeferson",
+            children: [
+                { name: "Gabriel", value: 1},
+                { name: "Luiz\nHenrique", value: 1},
+                { name: "Guilherme", value: 1},
+                { name: "Ana\nHelena", value: 1},
+                { name: "Tainá", value: 1},
+            ]},
+            { name: "Tatiane",
+            children: [
+                { name: "Kauã", value: 1},
+                { name: "Angelina", value: 1},
+            ]},
+              
+            { name: "Alex",
+            children: [
+                { name: "Mateus", value: 1},
+                { name: "Milena", value: 1},
+            ]},  
+          ]
+        },  
+          
+        {
+        	// -------------- IRAN
+          name: "Iran",
+          children: [
+            { name: "Adriele", 
+            children: [
+                { name: "Amora", value: 1},
+                { name: "Emma", value: 1},
+            ]},
+            { name: "Samuel", value: 1 },
+          ]
+        },
+        {
+        	// -------------- IVAN
+          name: "Ivan", value: 1,
+        
+        },
+        {
+        	// -------------- MARIA AUXILIADORA
+          name: "Maria\n Auxiliadora",
+          children: [
+            {
+              name: "Jane",                             // 1 - Jane
+              children: [
+                { name: "Janine", 
+                    children: [
+                        {name: "Miguel", value: 1},
+                    ]},
+                { name: "Pedro", value: 1 },
+                { name: "Enzo", value: 1 },
+              ]
+            },
+            {
+              name: "Jean",                             // 2 - Jean
+              children: [
+                { name: "Maria\nEduarda", value: 1 },
+                { name: "Paulo\nHenrique", value: 1 },
+              ]
+            },
+            {
+              name: "Gilson",                           // 3 - Gilson
+              children: [
+                { name: "Eduardo", value: 1 },
+              ]
+            },
+            {
+              name: "Elaine",                           // 4 - Elaine
+              children: [
+                { name: "João\nPlínio", value: 1 },
+                { name: "Arthur", value: 1 },
+              ]
+            },
+            {
+              name: "William",                          // 5 - William
+              children: [
+                { name: "Júlia", value: 1 },
+              ]
+            },  
+          ]
+        },
+          {
+          	// -------------- GILVAN
+          name: "Gilvan",
+          children: [
+            
+                { name: "Leila", value: 1 },
+                { name: "Leticia", value: 1 },
+              ]
+            },
+        {
+        	// -------------- ARLETE
+          name: "Arlete",
+          children: [
+            
+                { name: "Bárbara", value: 1 },
+                { name: "Ana\nBeatriz", value: 1 },
+                { name: "Eduardo", value: 1 },
+                { name: "Sophia", value: 1 }
+
+              ]
+            },
+        {
+        	// -------------- MARCOS
+          name: "Marcos",
+          children: [              
+                { name: "Caio", value: 1 },
+                { name: "Marcos", value: 1 },
+                { name: "Augusto", value: 1 }
+              ]
+        },
+  
+      ]
+    }
+  ];
+  
+  networkSeries.dataFields.value = "value";
+  networkSeries.dataFields.name = "name";
+  networkSeries.dataFields.children = "children";
+  networkSeries.nodes.template.tooltipText = "{name}:{value}";
+  networkSeries.nodes.template.fillOpacity = 1;
+  networkSeries.manyBodyStrength = -15;
+  networkSeries.links.template.strength = 0.9;
+  networkSeries.maxRadius = 70;      
+  networkSeries.minRadius = am4core.percent(2);
+  
+  networkSeries.nodes.template.label.text = "{name}"
+  networkSeries.fontSize = 12;
+
+  // networkSeries.nodes.template.circle.disabled = true;
+  // networkSeries.nodes.template.outerCircle.disabled = true;
+
+  
+  }); // end am4core.ready()
+  </script>
+  
+  <!-- HTML -->
+  <div id="chartdiv"></div>
