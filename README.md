@@ -1,6 +1,9 @@
-# leilaapsilva.github.io
-site pessoal
+# Leila Aparecida da Silva
+Site pessoal
 
-implementar com React
+Estudante de Engenharia de Computação - UFSCar
+Desenvolvedora Django
 
-site memes educativos
+[Árvore genealógica](leila.codes/familytree)
+
+[Jogo da memória](leila.codes/AnimalCrossingMemoryGame)
