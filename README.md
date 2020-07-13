@@ -2,8 +2,9 @@
 Site pessoal
 
 Estudante de Engenharia de Computação - UFSCar
+
 Desenvolvedora Django
 
-[Árvore genealógica](leila.codes/familytree)
+[Árvore genealógica](/familytree)
 
-[Jogo da memória](leila.codes/AnimalCrossingMemoryGame)
+[Jogo da memória](/AnimalCrossingMemoryGame)
