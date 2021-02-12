@@ -3,7 +3,7 @@ Site pessoal
 
 Estudante de Engenharia de Computação - UFSCar
 
-Desenvolvedora Django
+Desenvolvedora Django / Python
 
 [Árvore genealógica](/familytree)
 
